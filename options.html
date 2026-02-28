@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    textarea {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 8px;
+      font-family: monospace;
+    }
+    button {
+      padding: 6px 10px;
+      margin-bottom: 15px;
+    }
+    ul { line-height: 1.8; }
+    #lockSection { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+  <div id="lockSection">
+    <h3>Enter Password to Edit</h3>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button id="unlockBtn">Unlock</button>
+    <button id="setPasswordBtn">Set / Change Password</button>
+    <p id="lockStatus">Locked</p>
+  </div>
+
+  <h2>Blocked Sites (Bulk Edit)</h2>
+  <textarea id="bulkInput"></textarea>
+  <button id="saveBulk">Save Blocklist</button>
+
+  <h2>Blocked Keywords</h2>
+  <textarea id="keywordInput"></textarea>
+  <button id="saveKeywords">Save Keywords</button>
+
+  <h3>Current Blocked Sites</h3>
+  <ul id="blocklist"></ul>
+
+  <script src="options.js"></script>
+</body>
+</html>

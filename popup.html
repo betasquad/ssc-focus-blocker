@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      width: 260px;
+      padding: 12px;
+      background: #f4f6f8;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .block { background: #d9534f; color: white; }
+    .view { background: #6c757d; color: white; }
+    .focus { background: #0275d8; color: white; }
+    .stop { background: #5bc0de; color: white; }
+
+    #status {
+      margin-top: 10px;
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="blockCurrent" class="block">Block Current Site</button>
+  <button id="openList" class="view">View Blocklist</button>
+
+  <div id="status">No sites blocked</div>
+
+  <button id="startFocus" class="focus">Start 30 Min Focus</button>
+  <button id="stopFocus" class="stop">Stop Timer</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
